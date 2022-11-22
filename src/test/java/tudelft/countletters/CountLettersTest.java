@@ -17,4 +17,10 @@ public class CountLettersTest {
         Assertions.assertEquals(1, words);
     }
 
+    @Test
+    public void multipleMatchingWords2() {
+        int words = new CountLetters().count("Ramsr|**Ramons*Ramorr");
+        Assertions.assertEquals(3, words);
+    }
+
 }
